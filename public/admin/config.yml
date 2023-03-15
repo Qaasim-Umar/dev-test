@@ -1,0 +1,48 @@
+backend:
+  name: git-gateway
+  repo: Qaasim-Umar/DevCareer-blog-page
+  branch: main
+
+# publish_mode: editorial_workflow
+
+media_folder: public/img
+public_folder: img
+
+collections:
+  - name: "pages"
+    label: "pages[[p-l]]"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "content/home.md"
+        fields:
+          - label: "Posts"
+            name: "posts"
+            widget: list
+            fields:
+              - { label: "Author", name: "author", widget: "string" }
+              - { label: "Date", name: "date", widget: "datetime" }
+              - {
+                  label: "Article Title",
+                  name: "articleTitle",
+                  widget: "string",
+                }
+              - {
+                  label: "Article Description",
+                  name: "articleDescription",
+                  widget: "markdown",
+                }
+
+                - {
+                  label: "Post image ",
+                  name: "postImage",
+                  widget: "markdown",
+                }
+
+
+   - label: 'Posts'
+          name: "posts"
+          widget: list
+          fields:
+            - { label: "Name", name: "name", widget: "string"}
+            - { label: "Description", name: "description", widget: "text"}
