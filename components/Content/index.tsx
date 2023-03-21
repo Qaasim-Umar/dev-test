@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { cards, likes, tags, summaryCard } from "../../utils/content";
+import { likes, tags,summaryCard } from "../../utils/content";
 import BookIcon from "../vectors/BookIcon";
 import BookMarkIcon from "../vectors/BookmarkIcon";
 import CommentIcon from "../vectors/CommentIcon";
@@ -9,39 +9,40 @@ import ShareIcon from "../vectors/ShareIcon";
 import TwitterIcon from "../vectors/TwitterIcon";
 
 import { Component } from 'react'
-import { attributes, react as HomeContent } from '../content/home.md';
+import { attributes, react as HomeContent } from '../../content/home.md';
 
 type ContentType = {
-  cards: {
+  posts: {
     id: string;
-    title: string;
+    articleTitle: string;
     author: string;
-    logo: string;
-    contentCover: string;
-    summary: string;
+    image: string;
+   articleDescription: string;
     content: string;
   };
 };
 
-const Content = (props: ContentType) => {
-  console.log(props);
-  if (props.cards) {
-    const { title, logo, author, contentCover, content } = props.cards;
 
+const Content = (props: ContentType) => {
+  let {posts} = attributes;
+  console.log(props);
+  if (props.posts) {
+    const { articleTitle, author, image,content, articleDescription} = props.posts;
+    
     return (
       <div className="flex-1">
         <div className="space-y-8 lg:max-w-[75%] 2xl:max-w-[60%] mx-auto w-full">
           <span className="relative w-full h-[30vh] lg:h-[75vh] 2xl:h-[65vh] block">
-            <Image src={contentCover} alt="content-img" fill />
+            <Image src={image} alt="content-img" fill />
           </span>
           <h1 className="text-3xl lg:text-5xl font-bold lg:max-w-[70%] text-center mx-auto lg:leading-[3.5rem]">
-            {title}
+            {articleTitle}
           </h1>
           <div className="flex flex-col items-center justify-center lg:flex-row gap-x-3 gap-y-4 lg:gap-y-0">
             <div className="flex items-center gap-x-3">
               <span className="relative w-12 h-12">
                 <Image
-                  src={logo}
+                  src="/img/profile-logo.webp"
                   alt="profile-logo"
                   fill
                   className="rounded-full"
@@ -97,10 +98,10 @@ const Content = (props: ContentType) => {
             More articles
           </h4>
           <div className="flex flex-col mb-8 lg:flex-row gap-y-6 lg:gap-y-0 gap-x-8">
-            {summaryCard.map((card, i) => (
+            {posts.slice(0,3).map((post : any, i : any) => (
               <div
                 className="flex flex-col px-4 py-3 border rounded-md gap-y-2"
-                key={card.title + i}
+                key={post.articleTitle + i}
               >
                 <div className="flex items-center gap-x-2">
                   <span className="relative w-8 h-8 rounded-full">
@@ -111,18 +112,18 @@ const Content = (props: ContentType) => {
                       className="object-cover rounded-full"
                     />
                   </span>
-                  <span className="font-bold">{card.author}</span>
+                  <span className="font-bold">{post.author}</span>
                 </div>
                 <span className="relative h-[15rem] w-full rounded-">
                   <Image
-                    src={card.contentCover}
+                    src={post.image}
                     alt="article-img"
                     fill
                     className="object-cover rounded-sm"
                   />
                 </span>
-                <h2 className="text-2xl font-bold">{card.title}</h2>
-                <p className="text-[#374151]">{card.summary}</p>
+                <h2 className="text-2xl font-bold">{post.articleTitle}</h2>
+                <p className="text-[#374151]">{post.articleDescription}</p>
               </div>
             ))}
           </div>

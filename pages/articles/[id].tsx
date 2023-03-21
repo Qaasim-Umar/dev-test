@@ -1,16 +1,20 @@
 import NavBar from "components/Navbar";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { cards } from "../../utils/content";
+// import { cards } from "../../utils/content";
 import Article from "../article";
+import Image from "next/image";
+import { attributes, react as HomeContent } from '../../content/home.md';
 
 export default function Home() {
+  let {posts} = attributes;
+
   const router = useRouter();
   const { id } = router.query;
-  const c = cards.find((card) => card.id.toString() === id);
-  console.log(c);
+  const c = posts.find((posted : any) => posted.id.toString() === id);
+  // console.log(c);
 
-  const co = { id: 0, title: "d", content: "j", logo: "/img", contentCover: "/img", author: "c" }
+  const co = { id: 0, articleTitle: "d", content: "j", logo: "/img", author: "c" }
   return (
     <div>
       <Head>

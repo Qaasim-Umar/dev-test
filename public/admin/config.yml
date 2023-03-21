@@ -52,7 +52,9 @@ collections:
                   widget: "markdown",
                 }
 
-              - { label: "Post image ", name: "postImage", widget: "markdown" }
+              - { label: "Post image ", name: "Image", widget: "markdown" }
+              - { label: "Content ", name: "Content", widget: "markdown" }
+              - { label: "id ", name: "id", widget: "markdown" }
 
       # - label: "Posts"
       #   name: "posts"

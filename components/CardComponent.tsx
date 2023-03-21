@@ -64,11 +64,11 @@ const postComponent = () => {
 
               <small className="mb-2 text-gray-700"> Author : {post.author}</small>
               <small className="mb-2 text-gray-700"> Author : {post.date}</small>
-              <Link href={`/articles/${post.id}`}
+              <a href={`/articles/${post.id}`}
                 className="text-indigo-500 transition border-b-2 w-20 border-b-gray-500"
               >
                 Read more
-              </Link>
+              </a>
             </div>
             <hr className="mt-9" />
           </div>
