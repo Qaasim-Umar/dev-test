@@ -13,7 +13,7 @@ import { attributes, react as HomeContent } from '../../content/home.md';
 
 type ContentType = {
   posts: {
-    id: string;
+    // id: string;
     articleTitle: string;
     author: string;
     image: string;

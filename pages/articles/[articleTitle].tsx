@@ -10,11 +10,11 @@ export default function Home() {
   let {posts} = attributes;
 
   const router = useRouter();
-  const { id } = router.query;
-  const c = posts.find((posted : any) => posted.id.toString() === id);
+  const { articleTitle } = router.query;
+  const c = posts.find((posted : any) => posted.articleTitle.toString() === articleTitle);
   // console.log(c);
 
-  const co = { id: 0, articleTitle: "d", content: "j", logo: "/img", author: "c" }
+  const co = {  articleTitle:"Integrating your blog site with Netlify CMS", content: "j", logo: "/img", author: "c" }
   return (
     <div>
       <Head>
