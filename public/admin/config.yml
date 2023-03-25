@@ -46,14 +46,14 @@ collections:
                   name: "articleTitle",
                   widget: "string",
                 }
-              - {
-                  label: "Article Description",
-                  name: "articleDescription",
-                  widget: "markdown",
-                }
+              # - {
+              #     label: "Article Description",
+              #     name: "articleDescription",
+              #     widget: "markdown",
+              #   }
 
-              - { label: "Post image ", name: "Image", widget: "markdown" }
-              - { label: "Content ", name: "Content", widget: "markdown" }
+              - { label: "image ", name: "image", widget: "markdown" }
+              - { label: "Content ", name: "Content", widget: "string" }
               # - { label: "id ", name: "id", widget: "markdown" }
 
       # - label: "Posts"

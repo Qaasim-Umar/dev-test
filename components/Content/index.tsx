@@ -17,8 +17,8 @@ type ContentType = {
     articleTitle: string;
     author: string;
     image: string;
-   articleDescription: string;
-    content: string;
+  //  articleDescription: string;
+    Content: string;
   };
 };
 
@@ -27,7 +27,7 @@ const Content = (props: ContentType) => {
   let {posts} = attributes;
   console.log(props);
   if (props.posts) {
-    const { articleTitle, author, image,content, articleDescription} = props.posts;
+    const { articleTitle, author, image,Content} = props.posts;
     
     return (
       <div className="flex-1">
@@ -63,7 +63,7 @@ const Content = (props: ContentType) => {
         </div>
         <div className="px-6 lg:max-w-[75%] 2xl:max-w-[55%] mx-auto w-full mt-8 lg:grid lg:grid-cols-[0.8fr_0.2fr]">
           <article className="flex flex-col flex-1 py-8 overflow-auto gap-y-10 scrollbar-hide lg:h-screen">
-            {content}
+            {Content}
           </article>
           <div className="flex flex-col-reverse px-4 lg:flex-col gap-y-4">
             <div className="flex flex-wrap lg:grid lg:grid-cols-2 justify-evenly gap-y-4">
@@ -123,7 +123,7 @@ const Content = (props: ContentType) => {
                   />
                 </span>
                 <h2 className="text-2xl font-bold">{post.articleTitle}</h2>
-                <p className="text-[#374151]">{post.articleDescription}</p>
+                <p className="text-[#374151] md:max-w-[400px] max-h-[125px] overflow-hidden">{post.Content}</p>
               </div>
             ))}
           </div>

@@ -42,14 +42,14 @@ const postComponent = () => {
           </span>
         </div>
       </aside>
-      <div className="justify-center max-w-full flex-col gap-6 mx-auto md:flex-row md:w-[80%] md:max-w-5xl ">
+      <div className="justify-center max-w-full flex-col gap-6 mx-auto md:flex-row  md:w-[80%] md:max-w-5xl ">
         {posts.slice(0,6).map((post : any , i : any) => (
           <div
             className="relative z-10 flex flex-col gap-1 p-5 px-6 md:flex-row-reverse md:p-0  md:py-6   md:border-b-[1px] md:border-b-neutral-300"
             key={i}
           >
             <Image
-              src={post.postImage}
+              src={post.image}
               alt="logo"
               width="270"
               height="300"
@@ -57,13 +57,14 @@ const postComponent = () => {
             />
 
             <div className="max-w-2xl md:justify-center flex flex-col">
-              <h1 className="my-1 text-xl font-bold text-gray-700">
+              <h1 className="my-1 font-bold text-xl text-gray-700">
                 {post.articleTitle}
               </h1>
-              <p className="mb-2 text-gray-700">{post.articleDescription}</p>
-
+              <p className="mb-2 max-h-[95px] overflow-hidden text-gray-700">{post.Content}</p>
+<div className="flex justify-between pr-7 text-black">
               <small className="mb-2 text-gray-700"> Author : {post.author}</small>
-              <small className="mb-2 text-gray-700"> Author : {post.date}</small>
+              <small className="mb-2 text-gray-700"> Post Date : {post.date}</small>
+              </div>
               <a href={`/articles/${post.articleTitle}`}
                 className="text-indigo-500 transition border-b-2 w-20 border-b-gray-500"
               >
