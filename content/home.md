@@ -2,7 +2,7 @@
 posts:
   - author: "Qaasim Umar adisa "
     content: jgshfboilrknm;vlej arojpojjknrmlk;mlmiklm
-    articleTitle: Integrating your blog site with Netlify CMS acodud
+    articleTitle: Integrating your blog site and title one
     articleDescription: Serverless SaaS is aiming to be the perfect starting point
       for your next React app to build full-stack SaaS applications. Visit
       serverless.page for more info.Serverless SaaS is aiming to be the perfect
