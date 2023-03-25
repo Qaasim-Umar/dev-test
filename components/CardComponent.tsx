@@ -49,7 +49,7 @@ const postComponent = () => {
             key={i}
           >
             <Image
-              src={post.image}
+              src={post.postImage}
               alt="logo"
               width="270"
               height="300"
