@@ -22,14 +22,6 @@ posts:
       sjhdfuhf jdfudh dfuidsa lzkjawisu.
     date: 2023-03-21T12:05:53.534Z
     image: /img/bg-2.webp
-  - author: John Doe
-    articleTitle: Using Tailwind CSS
-    Content: L﻿orem Ipsum deiut jdhf hhfhd jcfg hfhfyud usjhs hfhjjdu hud. djsfusydf
-      djsauhu dsihdfdh jdhsfuhdsuf hdsuhfusd uhfuhcn sjdhfuhsdfh sdhfhsdhf
-      jsdhhh jsjjfhdjh hdfhdj jdffjjd vbxhus asdufh dfgsh hjfhhnh sdhfuisyfhsd
-      jhdufsd fjshjd jsdh.
-    date: 2023-03-21T12:05:53.595Z
-    image: /img/rectangle-3.png
   - author: Abigail Michael
     articleTitle: How to fry an egg
     Content: Oil in pan, pan on fire, egg in pan hgaughv  jhhgvb ljjjrtns;ntkgn
@@ -44,6 +36,14 @@ posts:
       ;siy['hjoijaoyj sint[itjptji ;sitjs]ijthaojhitjhij;gnh]]]
     date: 2023-03-21T12:05:53.663Z
     image: /img/whatsapp-image-2023-03-21-at-9.42.27-am.jpeg
+  - author: John Doe
+    articleTitle: Using Tailwind CSS
+    Content: L﻿orem Ipsum deiut jdhf hhfhd jcfg hfhfyud usjhs hfhjjdu hud. djsfusydf
+      djsauhu dsihdfdh jdhsfuhdsuf hdsuhfusd uhfuhcn sjdhfuhsdfh sdhfhsdhf
+      jsdhhh jsjjfhdjh hdfhdj jdffjjd vbxhus asdufh dfgsh hjfhhnh sdhfuisyfhsd
+      jhdufsd fjshjd jsdh.
+    date: 2023-03-21T12:05:53.595Z
+    image: /img/rectangle-3.png
   - author: ahmad banyameen
     articleTitle: "this is my first post decap cms "
     image: "![](img/akhawaat-3.png)"
