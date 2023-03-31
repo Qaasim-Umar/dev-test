@@ -27,7 +27,7 @@ const Content = (props: ContentType) => {
   let {posts} = attributes;
   console.log(props);
   if (props.posts) {
-    const { articleTitle, author, image,Content} = props.posts;
+    const { articleTitle, author, image, Content} = props.posts;
     
     return (
       <div className="flex-1">
@@ -141,7 +141,7 @@ const Content = (props: ContentType) => {
     return (
       <div className=" md:max-w-[77%]">
         <div className="md:w-[70%] mx-auto ">
-          <p className="text-[20px] w-[320px] mb-8 rounded-md p-2 bg-[#ffc116] mx-auto flex justify-center">
+          <p className="text-[20px] w-[320px] mb-8 rounded-md p-2 bg-[#05b993] mx-auto flex justify-center">
             {" "}
             Loading...
           </p>

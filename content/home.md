@@ -46,7 +46,7 @@ posts:
     image: /img/whatsapp-image-2023-03-21-at-9.42.27-am.jpeg
   - author: ahmad banyameen
     articleTitle: "this is my first post decap cms "
-    image: "![](img/akhawaat-3.png)"
+    image: "/img/akhawaat-3.png"
     Content: happy Ramadan ooo taqaballah minna wa min qum saliah amal  lorem isum
       jbv:ebBJKv hvejbjbebjedv jkbrvke jwriheih uuhIFHFUFE IUHw;rwruwpwhwegj
       hpwuiihwiwohepohgweohe jvwoihrwhiiohwrhihw'e j;wihg;eioh;weihewf

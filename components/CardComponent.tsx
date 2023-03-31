@@ -9,6 +9,9 @@ import { attributes, react as HomeContent } from '../content/home.md';
 
 const postComponent = () => {
   let {posts} = attributes;
+
+  const current = new Date();
+   const date =`${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
   return (
 <>
     <Head>
@@ -26,7 +29,7 @@ const postComponent = () => {
           </p>
         </div>
 
-        <div className=" bg-yellow relative  p-4 space-y-3 font-semibold rounded-md h-[200px] my-8">
+        <div className=" bg-[#05b993] relative  p-4 space-y-3 font-semibold rounded-md h-[200px] my-8">
           <p>Write on Devcareer</p>
           <p> Express yourself</p>
           <p>Grow your readership</p>
@@ -48,12 +51,10 @@ const postComponent = () => {
             className="relative z-10 flex flex-col gap-1 p-5 px-6 md:flex-row-reverse md:p-0  md:py-6   md:border-b-[1px] md:border-b-neutral-300"
             key={i}
           >
-            <Image
+            <img
               src={post.image}
               alt="logo"
-              width="270"
-              height="300"
-              className="rounded-lg md:w-[170px] w-[170px] z-10"
+              className="rounded-lg md:w-[170px] lg:w-[170px] sm:w-[270px]  sm:h-[170px]  h-36 w-[90%] z-10"
             />
 
             <div className="max-w-2xl md:justify-center flex flex-col">
@@ -63,7 +64,7 @@ const postComponent = () => {
               <p className="mb-2 max-h-[95px] overflow-hidden text-gray-700">{post.Content}</p>
 <div className="flex justify-between pr-7 text-black">
               <small className="mb-2 text-gray-700"> Author : {post.author}</small>
-              <small className="mb-2 text-gray-700"> Post Date : {post.date}</small>
+              <small className="mb-2 text-gray-700"> Post Date : {date}</small>
               </div>
               <a href={`/articles/${post.articleTitle}`}
                 className="text-indigo-500 transition border-b-2 w-20 border-b-gray-500"
