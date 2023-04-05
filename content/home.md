@@ -28,7 +28,7 @@ posts:
       ntjkns jktrnao[tnans jtn;anhoa atnaihio aitshtr s;ithaj[tha ;stkn'aojti
       ;siy['hjoijaoyj sint[itjptji ;sitjs]ijthaojhitjhij;gnh]]]
     date: 2023-03-21T12:05:53.630Z
-    image: '![alt posted](img/rectangle-3.png "and title")'
+    image: '![alt posted](img/profile-logo.webp "and title")'
   - author: Abigail Michael
     articleTitle: How to fry an egg
     Content: Oil in pan, pan on fire, egg in pan hgaughv  jhhgvb ljjjrtns;ntkgn
