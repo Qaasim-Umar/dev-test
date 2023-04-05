@@ -22,13 +22,13 @@ posts:
       sjhdfuhf jdfudh dfuidsa lzkjawisu.
     date: 2023-03-21T12:05:53.534Z
     image: "![](img/bg-2.webp)"
-  - author: Abigail Michael
+  - author: Abigail Michae 3rd Post
     articleTitle: How to fry an egg
     Content: Oil in pan, pan on fire, egg in pan hgaughv  jhhgvb ljjjrtns;ntkgn
       ntjkns jktrnao[tnans jtn;anhoa atnaihio aitshtr s;ithaj[tha ;stkn'aojti
       ;siy['hjoijaoyj sint[itjptji ;sitjs]ijthaojhitjhij;gnh]]]
     date: 2023-03-21T12:05:53.630Z
-    image: /img/profile-logo.webp
+    image: '![alt posted](img/rectangle-3.png "and title")'
   - author: Abigail Michael
     articleTitle: How to fry an egg
     Content: Oil in pan, pan on fire, egg in pan hgaughv  jhhgvb ljjjrtns;ntkgn
