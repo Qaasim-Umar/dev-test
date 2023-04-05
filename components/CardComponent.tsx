@@ -40,7 +40,7 @@ const postComponent = () => {
               className="  hover:bg-grey bg-black rounded-xl text-white px-6 py-2 my-4"
             >
               {" "}
-              Cumin...{" "}
+              Lorem{" "}
             </a>
           </span>
         </div>
@@ -54,7 +54,7 @@ const postComponent = () => {
             <img
               src={post.image}
               alt="logo"
-              className="rounded-lg md:w-[170px] lg:w-[170px] sm:w-[270px]  sm:h-[170px]  h-36 w-[90%] z-10"
+              className="rounded-lg object-cover md:w-[170px] lg:w-[170px] sm:w-[270px]  sm:h-[170px]  h-36 w-[90%] z-10"
             />
 
             <div className="max-w-2xl md:justify-center flex flex-col">

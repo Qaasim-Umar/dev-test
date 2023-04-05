@@ -13,7 +13,7 @@ const Index = (): JSX.Element => {
     const date = `${current.getDate()} ${month}, ${current.getFullYear()}`;
 
 return (
-    <section className='    md:sticky z-20 top-0 bg-[#fcfdef] flex flex-wrap p-4 md:px-0 md:flex-row gap-3 justify-center items-center'>
+    <section className='    md:sticky z-20 top-0 bg-[#daf7f0] flex flex-wrap p-4 md:px-0 md:flex-row gap-3 justify-center mb-3 items-center'>
         <div className='flex gap-1'>
             <p className='font-bold'>{day}</p>
             <p className='pr-4'>{date}</p>
