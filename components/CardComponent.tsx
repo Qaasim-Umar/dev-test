@@ -20,7 +20,7 @@ const postComponent = () => {
 
     <div className="py-8">
     &apos;
-      <aside className="hidden md:block w-[20%] h-[83rem] float-right mr-10  ml-12 py-12 pl-4 md:border-opacity-1 md:border-l-[1px] md:border-l-neutral-300">
+      <aside className="hidden md:block w-[30%] float-right mr-10 py-12 pl-8 md:border-opacity-1 md:border-l-[1px] h-[168rem] md:border-l-neutral-400">
         <div className="text-lg font-semibold text-gray">
           <p>
             {" "}
@@ -29,7 +29,7 @@ const postComponent = () => {
           </p>
         </div>
 
-        <div className=" bg-[#05b993] relative  p-4 space-y-3 font-semibold rounded-md h-[200px] my-8">
+        <div className=" bg-[#05b993] relative w-[80%]  p-4 space-y-3 font-semibold rounded-md h-[200px] my-8">
           <p>Write on Devcareer</p>
           <p> Express yourself</p>
           <p>Grow your readership</p>
@@ -46,15 +46,15 @@ const postComponent = () => {
         </div>
       </aside>
       <div className="justify-center max-w-full flex-col gap-6 mx-auto md:flex-row  md:w-[80%] md:max-w-5xl ">
-        {posts.slice(0,6).map((post : any , i : any) => (
+        {posts.slice(0,5).map((post : any , i : any) => (
           <div
-            className="relative z-10 flex flex-col gap-1 p-5 px-6 md:flex-row-reverse md:p-0  md:py-6   md:border-b-[1px] md:border-b-neutral-300"
+            className="relative z-10 flex flex-col gap-1 p-5 px-6  md:p-0  md:py-6   border-b-[1px] border-b-neutral-400"
             key={i}
           >
             <img
               src={post.image}
               alt="logo"
-              className="rounded-lg object-cover md:w-[170px] lg:w-[170px] sm:w-[270px]  sm:h-[170px]  h-36 w-[90%] z-10"
+              className="rounded-lg object-cover  lg:w-[670px]  lg:h-[320px]  h-46 w-[90%] z-10"
             />
 
             <div className="max-w-2xl md:justify-center flex flex-col">
@@ -72,7 +72,7 @@ const postComponent = () => {
                 Read more
               </a>
             </div>
-            <hr className="mt-9" />
+            {/* <hr className="mt-9" /> */}
           </div>
         ))}
       </div>

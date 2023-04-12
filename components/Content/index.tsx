@@ -62,7 +62,7 @@ const Content = (props: ContentType) => {
           </div>
         </div>
         <div className="px-6 lg:max-w-[75%] 2xl:max-w-[55%] mx-auto w-full mt-8 lg:grid lg:grid-cols-[0.8fr_0.2fr]">
-          <article className="flex flex-col flex-1 py-8 overflow-auto gap-y-10 scrollbar-hide lg:h-screen">
+          <article className="flex flex-col flex-1 py-8 overflow-auto gap-y-10 scrollbar-hide h-auto">
             {Content}
           </article>
           <div className="flex flex-col-reverse px-4 lg:flex-col gap-y-4">
