@@ -15,13 +15,13 @@ posts:
       aiming to be the perfect starting point jsbvlvfskjvbzkbvjfkjbvkjfzb jkzdfn
       jkfnbzd jk
     date: 2023-03-21T12:05:53.466Z
-    image: "![](img/akhawaat-3.png)"
+    image: "![](img/bg-2.webp)"
   - author: Jane Doe
     articleTitle: How to use GitHub
     Content: L﻿orem Ipsum hdhf jkshidasi ashdiuasd ashdiasd sjkdhasias safusdfh
       sjhdfuhf jdfudh dfuidsa lzkjawisu.
     date: 2023-03-21T12:05:53.534Z
-    image: "![](img/bg-2.webp)"
+    image:  "/img/bg-1.webp"
   - author: Abigail Michae 3rd Post
     articleTitle: How to fry an egg
     Content: Oil in pan, pan on fire, egg in pan hgaughv  jhhgvb ljjjrtns;ntkgn

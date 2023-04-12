@@ -29,20 +29,22 @@ const postComponent = () => {
           </p>
         </div>
 
-        <div className=" bg-[#05b993] relative w-[80%]  p-4 space-y-3 font-semibold rounded-md h-[200px] my-8">
+        <div className=" bg-[#05b993] relative w-[80%]  p-4 font-semibold rounded-md h-auto my-8">
+         <div className="space-y-5  mb-5">
           <p>Write on Devcareer</p>
           <p> Express yourself</p>
           <p>Grow your readership</p>
+          </div>
 
-          <span className=" absolute bottom-6">
+          <button className="  mb-5">
             <a
               href=""
-              className="  hover:bg-grey bg-black rounded-xl text-white px-6 py-2 my-4"
+              className="  hover:bg-grey bg-black rounded-md text-white px-6 py-2"
             >
               {" "}
               Lorem{" "}
             </a>
-          </span>
+          </button>
         </div>
       </aside>
       <div className="justify-center max-w-full flex-col gap-6 mx-auto md:flex-row  md:w-[80%] md:max-w-5xl ">
