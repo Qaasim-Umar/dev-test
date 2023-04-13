@@ -59,4 +59,13 @@ posts:
     image: /img/bg-1.webp
     Content: j/lbk/  jdflhsekfhvakelrhbea rkjlhpoa;eilrf;lwE EWKLHpfd;LJAM:FLMWE
       .klfh;awl.n,rdblka.s,NA:L
+  - author: Poster Noni
+    articleTitle: This is post number 7
+    image: "![](img/bg-2.webp)"
+    Content: Allahu akbar llahu akbar llahu akbar lla ilaha illa lahu Allahu akabar
+      llahu Abkbar wallillahi hamd Allahu akbar llahu akbar llahu akbar lla
+      ilaha illa lahu Allahu akabar llahu Abkbar wallillahi hamd Allahu akbar
+      llahu akbar llahu akbar lla ilaha illa lahu Allahu akabar llahu Abkbar
+      wallillahi hamd Allahu akbar llahu akbar llahu akbar lla ilaha illa lahu
+      Allahu akabar llahu Abkbar wallillahi hamd
 ---
