@@ -21,14 +21,16 @@ type ContentType = {
     Content: string;
   };
 };
+const current = new Date();
+const date =`${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
 
 
-const Content = (props: ContentType) => {
-  let {posts} = attributes;
-  console.log(props);
+function Content(props: ContentType): JSX.Element {
+  let { posts } = attributes;
+  // console.log(props);
   if (props.posts) {
-    const { articleTitle, author, image, Content} = props.posts;
-    
+    const { articleTitle, author, image, Content } = props.posts;
+
     return (
       <div className="flex-1">
         <div className="space-y-8 lg:max-w-[75%] 2xl:max-w-[60%] mx-auto w-full">
@@ -45,14 +47,13 @@ const Content = (props: ContentType) => {
                   src="/img/profile-logo.webp"
                   alt="profile-logo"
                   fill
-                  className="rounded-full"
-                />
+                  className="rounded-full" />
               </span>
               <span className="text-lg font-medium">{author}</span>
             </div>
             <div className="flex items-center gap-x-3">
               <span className="h-1 w-1 bg-[#8b8b8b] rounded-full hidden lg:block"></span>
-              <span className="text-lg text-[#374151]">December 06, 2022</span>
+              <span className="text-lg text-[#374151]">{date}</span>
               <span className="h-1 w-1 bg-[#8b8b8b] rounded-full"></span>
               <div className="flex items-center gap-x-2">
                 <BookIcon />
@@ -98,7 +99,7 @@ const Content = (props: ContentType) => {
             More articles
           </h4>
           <div className="flex flex-col mb-8 lg:flex-row gap-y-6 lg:gap-y-0 gap-x-8">
-            {posts.slice(0,3).map((post : any, i : any) => (
+            {posts.slice(0, 3).map((post: any, i: any) => (
               <div
                 className="flex flex-col px-4 py-3 border rounded-md gap-y-2"
                 key={post.articleTitle + i}
@@ -109,8 +110,7 @@ const Content = (props: ContentType) => {
                       src="/img/profile-logo.webp"
                       alt="user-img"
                       fill
-                      className="object-cover rounded-full"
-                    />
+                      className="object-cover rounded-full" />
                   </span>
                   <span className="font-bold">{post.author}</span>
                 </div>
@@ -119,8 +119,7 @@ const Content = (props: ContentType) => {
                     src={post.image}
                     alt="article-img"
                     fill
-                    className="object-cover rounded-sm"
-                  />
+                    className="object-cover rounded-sm" />
                 </span>
                 <h2 className="text-2xl font-bold">{post.articleTitle}</h2>
                 <p className="text-[#374151] md:max-w-[400px] max-h-[125px] overflow-hidden">{post.Content}</p>
@@ -149,6 +148,6 @@ const Content = (props: ContentType) => {
       </div>
     );
   }
-};
+}
 
 export default Content;

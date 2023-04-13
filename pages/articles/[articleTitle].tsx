@@ -14,7 +14,7 @@ export default function Home() {
   const c = posts.find((posted : any) => posted.articleTitle.toString() === articleTitle);
   // console.log(c);
 
-  const co = {  articleTitle:"Integrating your blog site with Netlify CMS", content: "j", logo: "/img", author: "c" }
+  const co = {  articleTitle:"Integrating your blog site with Netlify CMS", content: "j", image: "/img", author: "c" }
   return (
     <div>
       <Head>

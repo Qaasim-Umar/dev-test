@@ -4,8 +4,8 @@ import Link from "next/link";
 import Head from "next/head"
 import { Component } from 'react'
 import { attributes, react as HomeContent } from '../content/home.md';
-// import fs from "fs";
-// import matter from "gray-matter";
+import fs from "fs";
+import matter from "gray-matter";
 
 const postComponent = () => {
   let {posts} = attributes;
@@ -48,7 +48,7 @@ const postComponent = () => {
         </div>
       </aside>
       <div className="justify-center max-w-full flex-col gap-6 mx-auto md:flex-row  md:w-[80%] md:max-w-5xl ">
-        {posts.slice(0,5).map((post : any , i : any) => (
+        {posts.map((post : any , i : any) => (
           <div
             className="relative z-10 flex flex-col gap-1 p-5 px-6  md:p-0  md:py-6   border-b-[1px] border-b-neutral-400"
             key={i}
